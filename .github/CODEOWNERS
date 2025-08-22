@@ -1,0 +1,39 @@
+# CODEOWNERS file for analytics-tool-886
+# Global owners - will be requested for all PRs
+* @Armor-test/squad-ux @Armor-test/unit-devops @Armor-test/team-logging
+
+# Directory ownership
+/build/ @Armor-test/squad-search @Armor-test/team-reporting
+/extensions/ @Armor-test/squad-ml @Armor-test/team-reporting @Armor-test/grp-api
+/views/ @Armor-test/dept-test @Armor-test/grp-ui @Armor-test/dept-data
+/common/ @Armor-test/squad-mobile @Armor-test/grp-payments
+/api/ @Armor-test/dept-identity @Armor-test/dept-reliability
+/models/ @Armor-test/squad-cache @Armor-test/squad-api @Armor-test/team-reporting
+/security/ @Armor-test/unit-test @Armor-test/dept-billing @Armor-test/squad-tooling
+/shared/ @Armor-test/dept-api @Armor-test/dept-identity
+/auth/ @Armor-test/dept-logging @Armor-test/squad-qa
+/app/ @Armor-test/team-notifications @Armor-test/squad-apps
+/middleware/ @Armor-test/squad-ux @Armor-test/team-security
+/controllers/ @Armor-test/grp-storage @Armor-test/grp-integration
+/assets/ @Armor-test/squad-qa @Armor-test/dept-billing @Armor-test/grp-api
+
+# File type ownership
+*.properties @Armor-test/squad-cache @Armor-test/squad-mobile
+*.go @Armor-test/dept-release @Armor-test/squad-database
+*.json @Armor-test/grp-reporting @Armor-test/unit-design
+*.cpp @Armor-test/squad-cache @Armor-test/grp-storage
+*.scala @Armor-test/unit-devops @Armor-test/grp-storage
+*.sh @Armor-test/dept-data @Armor-test/squad-cloud @Armor-test/squad-research
+*.swift @Armor-test/unit-cloud @Armor-test/squad-qa
+*.jsx @Armor-test/dept-automation @Armor-test/team-notifications @Armor-test/team-core
+*.tf @Armor-test/dept-reporting @Armor-test/grp-ui @Armor-test/unit-design
+*.c @Armor-test/dept-logging @Armor-test/squad-ux @Armor-test/team-reporting
+*.h @Armor-test/dept-notifications @Armor-test/dept-ui @Armor-test/dept-security
+*.config @Armor-test/dept-api @Armor-test/team-reporting @Armor-test/grp-storage
+*.scss @Armor-test/unit-governance @Armor-test/squad-cache
+
+# Security and special files
+.github/workflows/ @Armor-test/ci-team @Armor-test/devops
+package.json @Armor-test/dependency-team @Armor-test/security
+Jenkinsfile @Armor-test/ci-team @Armor-test/devops
+/src/**/auth/ @Armor-test/security @Armor-test/auth-team
